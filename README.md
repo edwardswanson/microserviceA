@@ -6,7 +6,7 @@ Starting the server:
     - python3 diceroller.py
 
 
-How to send data to the server (microservice):
+How to connect and send data to the server (microservice):
   - To send data to the server, the client needs to make sure it's on the right port (localhost) and set up ZMQ socket connections.
   - For example, the client can run python code similar to this
         import zmq
