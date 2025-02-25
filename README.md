@@ -55,6 +55,7 @@ How to receive data from the server (these lines are at the bottom the code samp
 
             response = socket.recv_string()
             data = json.loads(response)
+            print(json.dumps(data))
 
 
 The server (microservice) will recieve data on port 5050 via ZeroMQ, following code similar to as follows:
