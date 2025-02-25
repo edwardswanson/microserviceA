@@ -51,6 +51,7 @@ How to send data to the server (microservice):
         send_dice_request(port=5050)
 
 The server (microservice) will recieve data on port 5050 via ZeroMQ, following code similar to as follows:
+      
       # zeroMQ context and socket setup
       context = zmq.Context()
       # setup a reply socket
