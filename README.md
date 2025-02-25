@@ -50,6 +50,13 @@ How to connect and send data to the server (microservice):
 
         send_dice_request(port=5050)
 
+
+How to receive data from the server (these lines are at the bottom the code sample given just above):
+
+            response = socket.recv_string()
+            data = json.loads(response)
+
+
 The server (microservice) will recieve data on port 5050 via ZeroMQ, following code similar to as follows:
       
       # zeroMQ context and socket setup
